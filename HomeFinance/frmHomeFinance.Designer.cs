@@ -81,21 +81,21 @@
             // calculadoraToolStripMenuItem
             // 
             this.calculadoraToolStripMenuItem.Name = "calculadoraToolStripMenuItem";
-            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calculadoraToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.calculadoraToolStripMenuItem.Text = "Calculadora";
             this.calculadoraToolStripMenuItem.Click += new System.EventHandler(this.calculadoraToolStripMenuItem_Click);
             // 
             // calculadoraWindowsToolStripMenuItem
             // 
             this.calculadoraWindowsToolStripMenuItem.Name = "calculadoraWindowsToolStripMenuItem";
-            this.calculadoraWindowsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.calculadoraWindowsToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.calculadoraWindowsToolStripMenuItem.Text = "Calculadora Windows";
             this.calculadoraWindowsToolStripMenuItem.Click += new System.EventHandler(this.calculadoraWindowsToolStripMenuItem_Click);
             // 
             // santanderToolStripMenuItem
             // 
             this.santanderToolStripMenuItem.Name = "santanderToolStripMenuItem";
-            this.santanderToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.santanderToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.santanderToolStripMenuItem.Text = "Santander";
             this.santanderToolStripMenuItem.Click += new System.EventHandler(this.santanderToolStripMenuItem_Click);
             // 
@@ -142,6 +142,7 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmPrincipal_FormClosed);
+            this.Load += new System.EventHandler(this.frmPrincipal_Load);
             this.menustripPrincipal.ResumeLayout(false);
             this.menustripPrincipal.PerformLayout();
             this.toolStripPrincipal.ResumeLayout(false);

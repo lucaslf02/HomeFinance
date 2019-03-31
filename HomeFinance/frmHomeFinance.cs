@@ -13,10 +13,13 @@ namespace HomeFinance
 {
     public partial class frmPrincipal : Form
     {
+        Logon logon;
+
         private frmCalculadora fCalculadora;
         public frmPrincipal()
         {
             InitializeComponent();
+            logon = new Logon();
         }
 
         private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
@@ -68,6 +71,21 @@ namespace HomeFinance
             fCalculadora.Hide();
             fCalculadora.Show();
 
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            logon.ShowDialog();
+            if(logon.bSenhaOK == true)
+            {
+                this.Visible = true;
+            }
+            else
+            {
+                this.Close();
+            }
+            
         }
     }
 }

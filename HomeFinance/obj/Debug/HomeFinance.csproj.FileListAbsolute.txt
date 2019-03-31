@@ -10,3 +10,16 @@ C:\Users\Lucas\Desktop\Curso Quinto\Projeto\HomeFinance\HomeFinance\obj\Debug\Ho
 C:\Users\Lucas\Desktop\Curso Quinto\Projeto\HomeFinance\HomeFinance\obj\Debug\HomeFinance.pdb
 C:\Users\Lucas\Desktop\Curso Quinto\Projeto\HomeFinance\HomeFinance\obj\Debug\HomeFinance.frmBaseFechar.resources
 C:\Users\Lucas\Desktop\Curso Quinto\Projeto\HomeFinance\HomeFinance\obj\Debug\HomeFinance.frmCalculadora.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\bin\Debug\HomeFinance.exe.config
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\bin\Debug\HomeFinance.exe
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\bin\Debug\HomeFinance.pdb
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.csprojAssemblyReference.cache
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.frmBaseFechar.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.frmCalculadora.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.frmPrincipal.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.Logon.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.Properties.Resources.resources
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.csproj.GenerateResource.cache
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.csproj.CoreCompileInputs.cache
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.exe
+C:\Users\Lucas\Source\Repos\lucaslf02\HomeFinance\HomeFinance\obj\Debug\HomeFinance.pdb
