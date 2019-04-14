@@ -15,130 +15,94 @@ namespace HomeFinance
             InitializeComponent();
         }
 
+        private void InserirTextoVisor(string valor)
+        {
+            string valoratual;
+            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
+            valoratual += valor;
+            txtVisor.Text = valoratual;
+
+        }
+
         private void btn0_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null? txtVisor.Text: "");
-            valoratual = "0" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("0");
         }
 
         private void btnC_Click(object sender, EventArgs e)
         {
             txtVisor.Text = "";
+            txtVisor.Font = new Font("Arial", 31);
         }
 
         private void btnSeparador_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "," + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor(",");
         }
 
         private void btnSoma_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = " + " + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor(" + ");
         }
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            MessageBox.Show(valoratual);
-            valoratual = "1" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("1");
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "2" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("2");
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "3" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("3");
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "4" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("4");
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "5" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("5");
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "6" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("6");
         }
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "7" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("7");
         }
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "8" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("8");
         }
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = "9" + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor("9");
         }
 
         private void btnSubtracao_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = " - " + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor(" - ");
         }
 
         private void btnMultiplicacao_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = " * " + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor(" * ");
         }
 
         private void btnDivisao_Click(object sender, EventArgs e)
         {
-            string valoratual = "";
-            valoratual = (txtVisor.Text != null ? txtVisor.Text : "");
-            valoratual = " / " + valoratual;
-            txtVisor.Text = valoratual;
+            InserirTextoVisor(" / ");
         }
 
         private void btnBackSpace_Click(object sender, EventArgs e)
@@ -162,6 +126,20 @@ namespace HomeFinance
                 valoratual = (valoratual.Equals("-" + valoratual[valoratual.Length - 1])?""+valoratual[valoratual.Length - 1] : "-" + valoratual[valoratual.Length - 1]);
                 valoratual += txtVisor.Text;
                 txtVisor.Text = valoratual;
+            }
+        }
+
+        private void txtVisor_SizeChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtVisor_TextChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Fonte: " + txtVisor.Font.Size);
+            if (txtVisor.Text.Length > 11)
+            {
+                txtVisor.Font = new Font("Arial",txtVisor.Font.Size - 1);
             }
         }
     }

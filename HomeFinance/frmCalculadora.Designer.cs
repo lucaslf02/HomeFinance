@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtVisor = new System.Windows.Forms.RichTextBox();
             this.btnBackSpace = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
             this.btnNegativo = new System.Windows.Forms.Button();
@@ -48,19 +47,8 @@
             this.btnSeparador = new System.Windows.Forms.Button();
             this.btnResult = new System.Windows.Forms.Button();
             this.btnSoma = new System.Windows.Forms.Button();
+            this.txtVisor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // txtVisor
-            // 
-            this.txtVisor.BackColor = System.Drawing.Color.White;
-            this.txtVisor.Font = new System.Drawing.Font("Arial", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtVisor.Location = new System.Drawing.Point(36, 40);
-            this.txtVisor.Name = "txtVisor";
-            this.txtVisor.ReadOnly = true;
-            this.txtVisor.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txtVisor.Size = new System.Drawing.Size(284, 53);
-            this.txtVisor.TabIndex = 1;
-            this.txtVisor.Text = "";
             // 
             // btnBackSpace
             // 
@@ -270,10 +258,25 @@
             this.btnSoma.UseVisualStyleBackColor = true;
             this.btnSoma.Click += new System.EventHandler(this.btnSoma_Click);
             // 
+            // txtVisor
+            // 
+            this.txtVisor.BackColor = System.Drawing.Color.White;
+            this.txtVisor.Font = new System.Drawing.Font("Microsoft Sans Serif", 31F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtVisor.Location = new System.Drawing.Point(47, 53);
+            this.txtVisor.Multiline = true;
+            this.txtVisor.Name = "txtVisor";
+            this.txtVisor.ReadOnly = true;
+            this.txtVisor.Size = new System.Drawing.Size(262, 50);
+            this.txtVisor.TabIndex = 22;
+            this.txtVisor.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtVisor.SizeChanged += new System.EventHandler(this.txtVisor_SizeChanged);
+            this.txtVisor.TextChanged += new System.EventHandler(this.txtVisor_TextChanged);
+            // 
             // frmCalculadora
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtVisor);
             this.Controls.Add(this.btnSoma);
             this.Controls.Add(this.btnResult);
             this.Controls.Add(this.btnSeparador);
@@ -293,10 +296,8 @@
             this.Controls.Add(this.btnNegativo);
             this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnBackSpace);
-            this.Controls.Add(this.txtVisor);
             this.Name = "frmCalculadora";
             this.Text = "Calculadora";
-            this.Controls.SetChildIndex(this.txtVisor, 0);
             this.Controls.SetChildIndex(this.btnBackSpace, 0);
             this.Controls.SetChildIndex(this.btnC, 0);
             this.Controls.SetChildIndex(this.btnNegativo, 0);
@@ -316,14 +317,13 @@
             this.Controls.SetChildIndex(this.btnSeparador, 0);
             this.Controls.SetChildIndex(this.btnResult, 0);
             this.Controls.SetChildIndex(this.btnSoma, 0);
+            this.Controls.SetChildIndex(this.txtVisor, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.RichTextBox txtVisor;
         private System.Windows.Forms.Button btnBackSpace;
         private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button btnNegativo;
@@ -343,5 +343,6 @@
         private System.Windows.Forms.Button btnSeparador;
         private System.Windows.Forms.Button btnResult;
         private System.Windows.Forms.Button btnSoma;
+        private System.Windows.Forms.TextBox txtVisor;
     }
 }
